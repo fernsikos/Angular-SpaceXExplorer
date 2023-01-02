@@ -9,10 +9,9 @@ import { LaunchesComponent } from './launches/launches.component';
 import { MainComponent } from './main/main.component';
 import { RocketDataComponent } from './rocket-data/rocket-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatButtonModule} from '@angular/material/button';
 import { RocketDataDialogComponent } from './rocket-data-dialog/rocket-data-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 
@@ -30,9 +29,8 @@ import { RocketDataDialogComponent } from './rocket-data-dialog/rocket-data-dial
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule,
     MatDialogModule,
-    MatButtonModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

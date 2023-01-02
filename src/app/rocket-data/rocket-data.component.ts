@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
 import { RocketDataDialogComponent } from '../rocket-data-dialog/rocket-data-dialog.component';
+import {MatDialog} from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-rocket-data',
@@ -26,8 +27,12 @@ export class RocketDataComponent implements OnInit {
     console.log(this.rocketsAsJson)
 
   }
-
   openDialog() {
-    this.dialog.open(RocketDataDialogComponent)
+    const dialogRef = this.dialog.open(RocketDataDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
+
 }
