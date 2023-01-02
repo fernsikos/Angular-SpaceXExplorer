@@ -1,0 +1,22 @@
+<div class="rocket-data-container pl pr">
+    <!-- <div class="loading-container">
+        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div> -->
+   <div class="rockets-data-content-container">
+    <h1>Rockets</h1>
+    <div class="rocket-card-container ml mr">
+        <div *ngFor="let rocket of rocketsAsJson" class="rocket-card">
+            <div class="rocket-card-top">
+                <h2>{{ rocket.name }}</h2>
+                <img src="{{ rocket.flickr_images[0]}}" onerror="this.src='/assets/img/Fallback.jpeg'">
+                <span>{{ rocket.description }}</span>
+            </div>
+            <div class="rocket-card-bottom">
+                <button (click)="openDialog()">Data</button>
+            </div>
+        </div>
+      
+    </div>
+   </div>
+</div>
+

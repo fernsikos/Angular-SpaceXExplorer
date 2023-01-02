@@ -1,0 +1,43 @@
+.rockets-container {
+    height: calc(100vh - 100px);
+    background-image: url('/assets/img/white-train-airport-airplane-transport-vehicle-1038771-pxhere.com.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    animation: fadeIn 0.5s forwards;
+
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+        color: white;
+
+        h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        span {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            font-size: 20px;
+            color: white;
+            font-family: spacex-regular;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 10px 15px;
+            width: fit-content;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s forwards !important;
+}
